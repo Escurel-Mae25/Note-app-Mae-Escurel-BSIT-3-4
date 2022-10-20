@@ -48,7 +48,8 @@ if(cmd[2] === "delete")
  
         const newNote = read ()
         update (note, newNote)
-        // update the latest data
+
+        // update the latest data and (note, newNote)
         const present = require('./present')
         present(read())
         console.log (update)
