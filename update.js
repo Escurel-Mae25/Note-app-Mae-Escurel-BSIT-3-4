@@ -9,6 +9,7 @@ const updateData = JSON.parse(oldNote)
     }
     return n
   })
+  
   fs.writeFileSync('Note.txt', JSON.stringify(newNote))
 }
  module.exports = update
